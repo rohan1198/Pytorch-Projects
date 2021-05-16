@@ -1,2 +1,2 @@
 # Pytorch-Projects
-Small Projects done in Pytorch
+Deep Learning projects done in Pytorch
