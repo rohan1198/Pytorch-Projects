@@ -98,7 +98,7 @@ $$
     + \lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j} [(\sqrt{w_{i}} - \sqrt{\hat{w_{i}}})^2 + (\sqrt{h_{i}} - \sqrt{\hat{h_{i}}})^2] \\
     + \lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}(c_{i} - \hat{c_{i}})^{2} \\
     + \lambda_{noobj} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}(c_{i} - \hat{c_{i}})^{2} \\
-    + \sum_{i = 0}^{S^{2}} 1^{obj}_{i} \sum_{classes} (p_{i}(c) - \hat{p_{i}}(c))^{2}
+    + \sum_{i = 0}^{S^{2}} 1^{obj}_{i} \sum_{classes} (p_{i}(c) - \hat{p_{i}}(c))^{2} \\
     }
 $$
 
