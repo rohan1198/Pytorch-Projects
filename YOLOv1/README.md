@@ -93,11 +93,13 @@ $$
 - The following multi-part sum-squarred loss function is optimized during training:
 
 $$
-\lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}[(x_{i} - \hat{x_{i}})^2 + (y_{i} - \hat{y_{i}})^2] \\
-+ \lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j} [(\sqrt{w_{i}} - \sqrt{\hat{w_{i}}})^2 + (\sqrt{h_{i}} - \sqrt{\hat{h_{i}}})^2] \\
- + \lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}(c_{i} - \hat{c_{i}})^{2} \\
- + \lambda_{noobj} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}(c_{i} - \hat{c_{i}})^{2} \\
- + \sum_{i = 0}^{S^{2}} 1^{obj}_{i} \sum_{classes} (p_{i}(c) - \hat{p_{i}}(c))^{2}
+    \displaylines{
+    \lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}[(x_{i} - \hat{x_{i}})^2 + (y_{i} - \hat{y_{i}})^2] \\
+    + \lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j} [(\sqrt{w_{i}} - \sqrt{\hat{w_{i}}})^2 + (\sqrt{h_{i}} - \sqrt{\hat{h_{i}}})^2] \\
+    + \lambda_{coord} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}(c_{i} - \hat{c_{i}})^{2} \\
+    + \lambda_{noobj} \sum_{i = 0}^{S^{2}} \sum_{j = 0}^{B} 1^{obj}_{i j}(c_{i} - \hat{c_{i}})^{2} \\
+    + \sum_{i = 0}^{S^{2}} 1^{obj}_{i} \sum_{classes} (p_{i}(c) - \hat{p_{i}}(c))^{2}
+    }
 $$
 
 - Here, $1^{obj}_{i}$ denotes is object appears in cell $i$ and $1^{obj}_{ij}$ denotes the $j^{th}$ bounding box predictor in cell $i$ is responsible for that prediction.
